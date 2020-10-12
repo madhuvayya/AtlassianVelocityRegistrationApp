@@ -25,17 +25,23 @@ body {
 
 input {
 	width: 90%;
-	padding: 5px;
-	margin-bottom: 5px;
-	border-radius: 5px
 }
 
-.submit-field {
-	background-color: #00B242;
-	color: #ffffff;  
-}
-
-a {
+a, a:hover {
 	text-decoration: none;
 	color: #32C25D;
 }
+
+.field {
+	margin-top: 5px;
+}
+
+.medium-field {
+	background-color: #00B242;
+	color: #ffffff;	
+}
+
+#comment-save-button {
+	background-color: #32C25D;
+	color: #ffffff;
+} 

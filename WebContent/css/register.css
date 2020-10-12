@@ -19,22 +19,12 @@ body {
   text-align: center;
 }
 
-input {
-	width: 90%;
-	padding: 2px;
-	margin-bottom: 5px;
-	border-radius: 5px
-}
-
-.submit-field {
-	width: 70%;
-    margin-top: 5px;
-    padding: 5px;
-    background-color: #00B242;
-    color: #ffffff;
-}
-
-a {
+a, a:hover {
 	text-decoration: none;
 	color: #32C25D;
+}
+
+#comment-save-button {
+	background-color: #32C25D;
+	color: #ffffff;	
 }

@@ -1,42 +1,53 @@
 <html>
 <head>
 	<title>Registration Login App</title>
-	<link rel="stylesheet" href="./css/register.css">
+	<link rel="stylesheet" href="./css/dist/aui/aui-prototyping.css" media="all">
+	<link rel="stylesheet" href="./css/register.css">	
 </head>
 <body>
 	<div class="container">
 		$!message	
 	<h3>Enter Details</h3>
-	<form method="post" action="register">
-		<div class="fields-container">
-			<table>
-			<tr>
-			<td><label for="first_name">First Name</label></td>
-			<td><input name="first_name" id="first_name" required/></td>
-			</tr>
-			<tr>
-			<td><label for="last_name">Last Name</label></td>
-			<td><input name="last_name" id="last_name" required/></td>
-			</tr>
-			<tr>
-			<td><label for="phone_number">Phone Number</label></td>
-			<td><input name="phone_number" id="phone_number" required/></td>
-			</tr>
-			<tr>			
-			<td><label for="email">Email</label></td>
-			<td><input name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/></td>
-			</tr>
-			<tr>
-			<td><label for="password">Password</label></td>
-			<td><input type="password" id="password" name="password" required/></td>
-			</tr>
-			<tr>
-			<td><label for="confirm-password">Confirm password</label></td>
-			<td><input type="password" id="confirm-password" name="confirm-password" required/></td>
-			</tr>
-			</table>
-			<div><input class="submit-field" type="submit" value="Submit"></div>
-		</div>
+	<form class="aui" method="post" action="register">
+    	<div class="field-group">
+        	<label for="comment-first_name">First Name
+            	<span class="aui-icon icon-required">(required)</span>
+            </label>
+        	<input class="text medium-field" type="text" id="comment-first_name" name="first_name" required/>
+    	</div>
+    	<div class="field-group">
+        	<label for="comment-last_name">Last Name
+            	<span class="aui-icon icon-required">(required)</span>
+            </label>
+        	<input class="text medium-field" type="text" id="comment-last_name" name="last_name" required/>
+    	</div>
+    	<div class="field-group">
+        	<label for="comment-phone_number">Phone Number
+            	<span class="aui-icon icon-required">(required)</span>
+            </label>
+        	<input class="text medium-field" type="text" id="comment-phone_number" name="phone_number" required/>
+    	</div>
+    	<div class="field-group">
+        	<label for="comment-email">Email
+            	<span class="aui-icon icon-required">(required)</span>
+            </label>
+        	<input class="text medium-field" type="text" id="comment-email" name="email" required/>
+    	</div>    
+    	<div class="field-group">
+        	<label for="comment-password">Password
+            	<span class="aui-icon icon-required">(required)</span>
+            </label>
+        	<input class="text medium-field" type="password" id="comment-password" name="password" required/>
+    	</div>
+    	<div class="field-group">
+        	<label for="comment-confirm-password">Confirm Password
+            	<span class="aui-icon icon-required">(required)</span>
+            </label>
+        	<input class="text medium-field" type="password" id="comment-confirm-password" name="confirm-password" required/>
+    	</div>        
+    	<div class="buttons-container">
+            	<input class="button submit" type="submit" value="Submit" id="comment-save-button">
+    	</div>
 	</form>
 	<div>Already registered? <a href="/AtlassianVelocityRegistrationApp/login.vm"> Login</a></div>
 	</div>

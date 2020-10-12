@@ -1,19 +1,27 @@
 <html>
 <head>
 	<title>Registration Login App</title>
+	<link rel="stylesheet" href="./css/dist/aui/aui-prototyping.css" media="all">
 	<link rel="stylesheet" href="./css/login.css">
+	<script src="./css/dist/aui/aui-prototyping.js"></script>
 </head>
 <body>
 	<div class="container">
 	$!{message}	
 	<h3>Enter login details</h3>
-	<form method="post" action="login">
+	<form class="aui" method="post" action="login">
 		<div class="fields-container">
-			<div><input name="email" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/></div>
-			<div><input type="password" name="password" placeholder="Password" required/></div>
-			<div><input class="submit-field" type="submit" value="Login"></div>
+			<div class="field">
+				<input class="text medium-field" type="text" id="comment-email" name="email" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+			</div>
+			<div class="field">
+				<input class="text medium-field" id="comment-email" type="password" name="password" placeholder="Password" required/>
+			</div>
+			<div class="field">
+				<input class="text medium-field" id="comment-save-button" type="submit" value="Login">
+			</div>
 		</div>
 	</form>
-	<div>Not registered? <a href="/AtlassianVelocityRegistrationApp/register.vm"> Create an account</a></div>
+	<div class="field">Not registered? <a href="/AtlassianVelocityRegistrationApp/register.vm"> Create an account</a></div>
 </body>
 </html>
